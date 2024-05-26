@@ -1,1 +1,10 @@
-<p>header works!</p>
+<mat-toolbar color="primary">
+  <span>{{ translations.HEADER?.TITLE }}</span>
+  <span class="spacer"></span>
+  <nav>
+    <a mat-button routerLink="/aboutme">{{ translations.HEADER?.ABOUT }}</a>
+    <a mat-button routerLink="/projects">{{ translations.HEADER?.PROJECTS }}</a>
+    <a mat-button routerLink="/contact">{{ translations.HEADER?.CONTACT }}</a>
+  </nav>
+  <app-language-selector></app-language-selector>
+</mat-toolbar>

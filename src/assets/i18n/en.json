@@ -1,0 +1,29 @@
+{
+  "HEADER": {
+    "TITLE": "My Portfolio",
+    "ABOUT": "About Me",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "ABOUT_ME": {
+    "TITLE": "About Me",
+    "DESCRIPTION": "Hello, I am [Your Name], a programmer with experience in [Technologies/Areas]."
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "WEB_PROJECTS": "Web Projects",
+    "ANDROID_PROJECTS": "Android Projects",
+    "DESKTOP_PROJECTS": "Desktop Projects",
+    "OTHER_PROJECTS": "Other Projects"
+  },
+  "CONTACT": {
+    "TITLE": "Contact Me",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "MESSAGE": "Message",
+    "SEND": "Send"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© 2024 My Portfolio"
+  }
+}

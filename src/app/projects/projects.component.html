@@ -1,1 +1,29 @@
-<p>projects works!</p>
+<section class="projects">
+  <h2>Projects</h2>
+  <mat-tab-group>
+    <mat-tab label="Web">
+      <mat-card *ngFor="let project of webProjects">
+        <mat-card-title>{{project.title}}</mat-card-title>
+        <mat-card-content>{{project.description}}</mat-card-content>
+      </mat-card>
+    </mat-tab>
+    <mat-tab label="Android">
+      <mat-card *ngFor="let project of androidProjects">
+        <mat-card-title>{{project.title}}</mat-card-title>
+        <mat-card-content>{{project.description}}</mat-card-content>
+      </mat-card>
+    </mat-tab>
+    <mat-tab label="Desktop">
+      <mat-card *ngFor="let project of desktopProjects">
+        <mat-card-title>{{project.title}}</mat-card-title>
+        <mat-card-content>{{project.description}}</mat-card-content>
+      </mat-card>
+    </mat-tab>
+    <mat-tab label="Others">
+      <mat-card *ngFor="let project of otherProjects">
+        <mat-card-title>{{project.title}}</mat-card-title>
+        <mat-card-content>{{project.description}}</mat-card-content>
+      </mat-card>
+    </mat-tab>
+  </mat-tab-group>
+</section>

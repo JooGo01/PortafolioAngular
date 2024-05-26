@@ -1,0 +1,29 @@
+{
+  "HEADER": {
+    "TITLE": "Mi Portafolio",
+    "ABOUT": "Sobre Mí",
+    "PROJECTS": "Proyectos",
+    "CONTACT": "Contacto"
+  },
+  "ABOUT_ME": {
+    "TITLE": "Sobre Mí",
+    "DESCRIPTION": "Hola, soy [Tu Nombre], un programador con experiencia en [Tecnologías/Áreas]."
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "WEB_PROJECTS": "Proyectos Web",
+    "ANDROID_PROJECTS": "Proyectos Android",
+    "DESKTOP_PROJECTS": "Proyectos de Escritorio",
+    "OTHER_PROJECTS": "Otros Proyectos"
+  },
+  "CONTACT": {
+    "TITLE": "Contáctame",
+    "NAME": "Nombre",
+    "EMAIL": "Correo Electrónico",
+    "MESSAGE": "Mensaje",
+    "SEND": "Enviar"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© 2024 Mi Portafolio"
+  }
+}

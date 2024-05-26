@@ -1,12 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule } from '@angular/router';
+import { LanguageSelectorComponent } from '../language-selector/language-selector.component';
+import { TranslationService } from '../translation.service';
+import {MatAnchor} from "@angular/material/button";
 
 @Component({
   selector: 'app-header',
-  standalone: true,
-  imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css'],
+  standalone: true,
+  imports: [MatToolbarModule, RouterModule, LanguageSelectorComponent, MatAnchor]
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+  translations: any = {};
 
+  constructor(private translationService: TranslationService) {}
+
+  ngOnInit() {
+    this.translationService.currentTranslations.subscribe(
+      (translations) => {
+        this.translations = translations;
+      }
+    );
+  }
 }
