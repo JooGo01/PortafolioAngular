@@ -1,41 +1,47 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
+// Plus imports for other components in your app.
 
-// Define primary and accent palettes
-$primary-palette: mat.m2-define-palette(mat.$blue-palette);
-$accent-palette: mat.m2-define-palette(mat.$cyan-palette);
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
 
-// Light theme colors
-$light-theme: mat.define-theme((
-  color: (
-    primary: $primary-palette,
-    accent: $accent-palette,
-    background: (
-      default: #ffffff
-    ),
-    text: (
-      primary: #000000
-    )
-  )
-));
+$clr-primary:#E3EDF8;
+$clr-secondary:#00ADB5;
+$clr-accent: #00FFF5;
+$clr-neutral-light:#EEEEEE;
+$clr-neutral-dark:#222831;
 
-// Dark theme colors
-$dark-theme: mat.define-theme((
-  color: (
-    primary: $primary-palette,
-    accent: $accent-palette,
-    background: (
-      default: #000000
-    ),
-    text: (
-      primary: #ffffff
-    )
-  )
-));
+$simple-gradient: $clr-primary, $clr-secondary;
+$complex-gradient: $clr-primary, $clr-secondary, $clr-accent;
 
-.light-theme {
-  @include mat.all-component-themes($light-theme);
+$scheme-default: $clr-neutral-light, $clr-primary;
+$scheme-secondary: $clr-neutral-dark, $clr-secondary;
+$scheme-accent-gradient: $clr-neutral-dark, $complex-gradient;
+
+.light-theme{
+  background-color: $clr-primary;
+  color:$clr-neutral-dark;
 }
 
-.dark-theme {
-  @include mat.all-component-themes($dark-theme);
+.dark-theme{
+  background-color: $clr-neutral-dark;
+  color: $clr-neutral-light;
+}
+
+$portafolio-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$azure-palette,
+    tertiary: mat.$blue-palette,
+  ),
+  density: (
+    scale: 0,
+  )
+));
+
+:root {
+  @include mat.all-component-themes($portafolio-theme);
 }
