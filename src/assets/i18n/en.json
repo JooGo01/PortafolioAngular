@@ -25,5 +25,12 @@
   },
   "FOOTER": {
     "COPYRIGHT": "© 2024 My Portfolio"
+  },
+  "SELECT_TITLE": {
+    "TITLE": "Select Language"
+  },
+  "SELECT_LANGUAGE": {
+    "SPN": "Spanish",
+    "ENG": "English"
   }
 }

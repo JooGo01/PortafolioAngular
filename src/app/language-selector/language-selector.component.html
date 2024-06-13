@@ -1,4 +1,9 @@
-<div>
-  <button (click)="changeLanguage('en')">English</button>
-  <button (click)="changeLanguage('es')">Español</button>
+<div id="selectorLenguaje">
+  <mat-form-field>
+    <mat-label>{{ translations.SELECT_TITLE?.TITLE }}</mat-label>
+    <select matNativeControl #selectList (change)="changeLanguage(selectList.value)">
+      <option value="en">{{ translations.SELECT_LANGUAGE?.ENG }}</option>
+      <option value="es">{{ translations.SELECT_LANGUAGE?.SPN}}</option>
+    </select>
+  </mat-form-field>
 </div>
