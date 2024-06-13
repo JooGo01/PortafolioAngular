@@ -22,13 +22,25 @@ $scheme-secondary: $clr-neutral-dark, $clr-secondary;
 $scheme-accent-gradient: $clr-neutral-dark, $complex-gradient;
 
 .light-theme{
-  background-color: $clr-primary;
-  color:$clr-neutral-dark;
+  body{
+    background-color: $clr-primary !important;
+    color:$clr-neutral-dark !important;
+  }
+  footer{
+    background-color: $clr-primary !important;
+    color: $clr-neutral-dark !important;
+  }
 }
 
 .dark-theme{
-  background-color: $clr-neutral-dark;
-  color: $clr-neutral-light;
+  body {
+    background-color: $clr-neutral-dark !important;
+    color: $clr-neutral-light !important;
+  }
+  footer{
+    background-color: $clr-neutral-dark !important;
+    color: $clr-neutral-light !important;
+  }
 }
 
 $portafolio-theme: mat.define-theme((
